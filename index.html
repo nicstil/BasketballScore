@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Basketball Score</title>
+  </head>
+  <body>
+    <div id="containerBig">
+      <div id="containerBS">
+        <div id="containerHomeScore">
+          <h3>HOME</h3>
+          <h2 id="scoreHome">0</h2>
+          <div id="scoreHomeIncr">
+            <button onclick="incrHome1()">+1</button>
+            <button onclick="incrHome2()">+2</button>
+            <button onclick="incrHome3()">+3</button>
+          </div>
+        </div>
+        <div id="containerGuestScore">
+          <h3>GUEST</h3>
+          <h2 id="scoreGuest">0</h2>
+          <div id="scoreGuestIncr">
+            <button onclick="incrGuest1()">+1</button>
+            <button onclick="incrGuest2()">+2</button>
+            <button onclick="incrGuest3()">+3</button>
+          </div>
+        </div>
+      </div>
+      <button class="otherControls" onclick="playAgain()">Play Again</button>
+      <button class="otherControls" onclick="winner()">Winner</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
